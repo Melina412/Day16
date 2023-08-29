@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: mistyrose;
+}
+
+p {
+  padding: 45% 0;
+  color: white;
+  font-size: 20px;
+}
+
+.foto {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  justify-self: center;
+  height: 400px;
+  width: 400px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.hover-effect {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgba(50, 50, 50, 0.5);
+  transition-property: height;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.foto:hover .hover-effect {
+  height: 100%;
+}

@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: mistyrose;
+}
+
+.animation-div {
+  background-color: midnightblue;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation-name: movingBall;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin: 10vh 10%;
+  cursor: pointer;
+}
+
+@keyframes movingBall {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(500px);
+    background-color: cornflowerblue;
+  }
+  50% {
+    transform: translateX(500px) translateY(500px);
+    background-color: crimson;
+  }
+  75% {
+    transform: translateX(0) translateY(500px);
+    background-color: palevioletred;
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.animation-div:hover {
+  animation-play-state: paused;
+}

@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  background-color: lemonchiffon;
+  height: 400px;
+  width: 100vw;
+  padding: 50px;
+  position: relative;
+}
+
+div {
+  margin: 5px 0;
+  height: 100px;
+  width: 100px;
+  border-radius: 10%;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  padding: 40px 0;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+.div1 {
+  background-color: thistle;
+  transition-property: transform width height;
+}
+
+.div2 {
+  background-color: teal;
+  left: 200px;
+  transition-property: transform, scale;
+}
+
+/* hover-effect absichtlich in section platziert um den unterschied besser sehen zu können  */
+
+section:hover .div1 {
+  transform: rotate(90deg);
+  transform-origin: 0 100%;
+  width: 150px;
+  height: 150px;
+}
+
+section:hover .div2 {
+  transform: rotate(90deg) scale(1.5);
+  transform-origin: 0 100%;
+}

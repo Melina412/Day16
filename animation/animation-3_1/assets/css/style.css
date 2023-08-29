@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: mistyrose;
+}
+
+section {
+  position: relative;
+}
+
+div {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation-timing-function: ease-in-out;
+  margin: 10vh 10%;
+}
+
+/* - animation: name - duration - timing-function - delay - iteration-count - direction - fill-mode - play-state; */
+
+.animation-div1 {
+  background-color: midnightblue;
+  animation: ball1_step1 4s, ball1_step2 4s 4s infinite;
+}
+
+.animation-div2 {
+  background-color: cornflowerblue;
+  animation: ball2_step1 4s 1s, ball2_step2 4s 4s infinite;
+}
+
+.animation-div3 {
+  background-color: crimson;
+  animation: ball3_step1 4s 2s, ball3_step2 4s 4s infinite;
+}
+
+.animation-div4 {
+  background-color: palevioletred;
+  animation: ball4_step1 4s 3s, ball4_step2 4s 4s infinite;
+}
+
+/* * -------------------- keyframes step 2 -------------------- */
+
+@keyframes ball1_step1 {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(500px);
+    background-color: cornflowerblue;
+  }
+  50% {
+    transform: translateX(500px) translateY(500px);
+    background-color: crimson;
+  }
+  75% {
+    transform: translateX(0) translateY(500px);
+    background-color: palevioletred;
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes ball2_step1 {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(500px);
+    background-color: cornflowerblue;
+  }
+  50% {
+    transform: translateX(500px) translateY(500px);
+    background-color: crimson;
+  }
+  75% {
+    transform: translateX(0) translateY(500px);
+    background-color: palevioletred;
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes ball3_step1 {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(500px);
+    background-color: cornflowerblue;
+  }
+  50% {
+    transform: translateX(500px) translateY(500px);
+    background-color: crimson;
+  }
+  75% {
+    transform: translateX(0) translateY(500px);
+    background-color: palevioletred;
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes ball4_step1 {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(500px);
+    background-color: cornflowerblue;
+  }
+  50% {
+    transform: translateX(500px) translateY(500px);
+    background-color: crimson;
+  }
+  75% {
+    transform: translateX(0) translateY(500px);
+    background-color: palevioletred;
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/* * -------------------- keyframes step 2 -------------------- */
+
+@keyframes ball1_step2 {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(500px);
+    background-color: cornflowerblue;
+  }
+  50% {
+    transform: translateX(500px) translateY(500px);
+    background-color: crimson;
+  }
+  75% {
+    transform: translateX(0) translateY(500px);
+    background-color: palevioletred;
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes ball2_step2 {
+  0% {
+    transform: translateX(500px);
+  }
+  25% {
+    transform: translateX(500px) translateY(500px);
+    background-color: crimson;
+  }
+  50% {
+    transform: translateX(0) translateY(500px);
+    background-color: palevioletred;
+  }
+  75% {
+    transform: translateX(0);
+    background-color: midnightblue;
+  }
+  100% {
+    transform: translateX(500px);
+  }
+}
+
+@keyframes ball3_step2 {
+  0% {
+    transform: translateX(500px) translateY(500px);
+  }
+  25% {
+    transform: translateX(0) translateY(500px);
+    background-color: palevioletred;
+  }
+  50% {
+    transform: translateX(0);
+    background-color: midnightblue;
+  }
+  75% {
+    transform: translateX(500px);
+    background-color: cornflowerblue;
+  }
+  100% {
+    transform: translateX(500px) translateY(500px);
+  }
+}
+
+@keyframes ball4_step2 {
+  0% {
+    transform: translateX(0) translateY(500px);
+  }
+  25% {
+    transform: translateX(0);
+    background-color: midnightblue;
+  }
+  50% {
+    transform: translateX(500px);
+    background-color: cornflowerblue;
+  }
+  75% {
+    transform: translateX(500px) translateY(500px);
+    background-color: crimson;
+  }
+  100% {
+    transform: translateX(0) translateY(500px);
+  }
+}
